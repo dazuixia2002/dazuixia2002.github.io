@@ -1,0 +1,76 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset=UTF-8>
+	  <meta name="robots" content="noindex, nofollow">
+    <title>武陵坡</title>
+	<style>
+	#TodaysDate{color: red;}
+	a{color:blue;}
+	pre{font-family: sans-serif;}
+	</style>
+</head>
+<body>
+<pre><span id="TodaysDate">January 25, 2021</span>
+<hr><a href="https://www.inoreader.com/all_articles" target="_blank">订阅</a>
+<a href="https://dazuixia2002.github.io/crates/">板条箱</a>
+<a href="https://dazuixia2002.github.io/electric/">电气</a>
+<a href="https://www.dropbox.com/sh/401ow6ljddh7ozv/AAA41JZ8xUQ-15L-pwl3Kgzca?dl=0" target="_blank">网盘</a>
+<a href="https://www.youtube.com/channel/UCwLg5KYFXYYkX9_SrgiGquQ" target="_blank">播放列表</a>
+<a href="https://mail.google.com/" target="_blank">收件箱</a>
+</pre>
+<script>
+function GetDate() {
+    var mydate = new Date();
+    var year = mydate.getYear();
+    if (year < 1000)
+        year+=1900;
+    var month = mydate.getMonth() + 1;
+    var day = mydate.getDate();
+    var strMonth = "";
+    switch (month) {
+        case 1:
+            strMonth = "January";
+            break;
+        case 2:
+            strMonth = "February";
+            break;    
+        case 3:
+            strMonth = "March";
+            break;         
+        case 4:
+            strMonth = "April";
+            break;
+        case 5:
+            strMonth = "May";
+            break;    
+        case 6:
+            strMonth = "June";
+            break;     
+        case 7:
+            strMonth = "July";
+            break;
+        case 8:
+            strMonth = "August";
+            break;    
+        case 9:
+            strMonth = "September";
+            break;     
+        case 10:
+            strMonth = "October";
+            break;
+        case 11:
+            strMonth = "November";
+            break;    
+        case 12:
+            strMonth = "December";
+            break; 
+    }    
+    return strMonth + " " + day + ", " + year;
+}
+
+document.getElementById("TodaysDate").innerHTML = GetDate();
+</script>
+</body></html>
