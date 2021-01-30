@@ -7,22 +7,29 @@
 	<meta name="robots" content="noindex, nofollow">
     <title>武陵坡</title>
 	<style>
-	#TodaysDate{color: red;}
+	#TodaysDate{color: red;    font-style: italic;}
 	a{color:blue;}
-	.b{color:gold}
+	.b{color:gainsboro}
 	pre{font-family: sans-serif;}
 	</style>
 </head>
 <body>
 <pre><span id="TodaysDate">January 25, 2021</span><span style="float:right"></span>
 <hr><a href="https://wulingpo.github.io/dazuixia/">大醉虾</a>
-<a href="https://www.dropbox.com/sh/401ow6ljddh7ozv/AAA41JZ8xUQ-15L-pwl3Kgzca?dl=0" target="_blank">网盘</a><span class="b">&#129125;</span>
 <a href="https://www.youtube.com/channel/UCcdYt3wpcwCnkGM8XQ-njeA/playlists" target="_blank">播放列表</a><span class="b">&#129125;</span>
 <a href="https://mail.google.com/" target="_blank">收件箱</a><span class="b">&#129125;</span>
 <a href="https://www.inoreader.com/all_articles" target="_blank">订阅</a><span class="b">&#129125;</span>
--
 <a href="https://wulingpo.github.io/electric/">electric</a>
-</pre>
+
+<span style="cursor: pointer;color: blue;" onclick="sho0()">信鸽</span>
+<div id="odj_0" style="display:none"><div id="odj_1"><span style="font-style: italic;cursor: pointer;color: blue;font-size: small;text-decoration: underline;" onclick="sho()">&gt;&gt; [消息记录]<span>
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeHMWBPx48uPMdszVU7FYShK7x0lQqXnRxUSgbS3tW39QncIQ/viewform?embedded=true" style="width:100%;min-height:600px;border:none" frameborder="0" marginheight="0" marginwidth="0">正在加载…</iframe></div><div id="odj_2" style="display:none"><span style="font-style: italic;cursor: pointer;color: blue;font-size: small;text-decoration: underline;" onclick="sho()">&gt;&gt; [发消息]</span>
+
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSK6pYUS_mcGVNIP99NXL-I0K209Dro4sYEDgJEMdazV6j5NdWgQv3q86Xoi1BdlUuj1anrjBO5wZrK/pubhtml?widget=true&amp;headers=false" style="width:100%;min-height:800px;border:none"></iframe></div>
+</div>
+
+
 <script>
 function GetDate() {
     var mydate = new Date();
@@ -74,5 +81,32 @@ function GetDate() {
 }
 
 document.getElementById("TodaysDate").innerHTML = GetDate();
+
+var odj_1=document.getElementById("odj_1");
+var odj_2=document.getElementById("odj_2");
+var tempo=0;
+function sho(){
+  if(tempo==0){
+	odj_1.style="display:none";
+	odj_2.style="display:block";       
+	tempo=1; 
+  }else{
+	odj_1.style="display:block";
+	odj_2.style="display:none";       
+	tempo=0;
+  }
+}
+
+var odj_0=document.getElementById("odj_0");
+var tempo0=1;
+function sho0(){
+  if(tempo0==0){
+	odj_0.style="display:none";     
+	tempo0=1; 
+  }else{
+	odj_0.style="display:block";     
+	tempo0=0;
+  }
+}
 </script>
 </body></html>
