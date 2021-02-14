@@ -21,9 +21,9 @@
 <a href="https://wulingpo.github.io/electric/">electric</a>
 
 <span style="cursor: pointer;color: blue;" onclick="sho0()">信鸽</span>
-<div id="odj_0" style="display:none"><div id="odj_1"><span style="font-style: italic;cursor: pointer;color: blue;font-size: small;text-decoration: underline;" onclick="sho()">&gt;&gt; [消息记录]<span>
+<div id="obj_0" style="display:none"><div id="obj_1"><span style="font-style: italic;cursor: pointer;color: blue;font-size: small;text-decoration: underline;" onclick="sho()">&gt;&gt; [消息记录]<span>
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeHMWBPx48uPMdszVU7FYShK7x0lQqXnRxUSgbS3tW39QncIQ/viewform?embedded=true" style="width:100%;min-height:600px;border:none" frameborder="0" marginheight="0" marginwidth="0">正在加载…</iframe></div><div id="odj_2" style="display:none"><span style="font-style: italic;cursor: pointer;color: blue;font-size: small;text-decoration: underline;" onclick="sho()">&gt;&gt; [发消息]</span>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeHMWBPx48uPMdszVU7FYShK7x0lQqXnRxUSgbS3tW39QncIQ/viewform?embedded=true" style="width:100%;min-height:600px;border:none" frameborder="0" marginheight="0" marginwidth="0">正在加载…</iframe></div><div id="obj_2" style="display:none"><span style="font-style: italic;cursor: pointer;color: blue;font-size: small;text-decoration: underline;" onclick="sho()">&gt;&gt; [发消息]</span>
 
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSK6pYUS_mcGVNIP99NXL-I0K209Dro4sYEDgJEMdazV6j5NdWgQv3q86Xoi1BdlUuj1anrjBO5wZrK/pubhtml?widget=true&amp;headers=false" style="width:100%;min-height:800px;border:none"></iframe></div>
 </div>
@@ -81,29 +81,29 @@ function GetDate() {
 
 document.getElementById("TodaysDate").innerHTML = GetDate();
 
-var odj_1=document.getElementById("odj_1");
-var odj_2=document.getElementById("odj_2");
+var obj_1=document.getElementById("obj_1");
+var obj_2=document.getElementById("obj_2");
 var tempo=0;
 function sho(){
   if(tempo==0){
-	odj_1.style="display:none";
-	odj_2.style="display:block";       
+	obj_1.style="display:none";
+	obj_2.style="display:block";       
 	tempo=1; 
   }else{
-	odj_1.style="display:block";
-	odj_2.style="display:none";       
+	obj_1.style="display:block";
+	obj_2.style="display:none";       
 	tempo=0;
   }
 }
 
-var odj_0=document.getElementById("odj_0");
+var obj_0=document.getElementById("obj_0");
 var tempo0=1;
 function sho0(){
   if(tempo0==0){
-	odj_0.style="display:none";     
+	obj_0.style="display:none";     
 	tempo0=1; 
   }else{
-	odj_0.style="display:block";     
+	obj_0.style="display:block";     
 	tempo0=0;
   }
 }
